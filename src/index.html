@@ -4,26 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 11</title>
+    <!-- Modern Normalize -->
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/style.css"/>
   </head>
   <body>
     
     <form class="search-form" id="search-form">
       <input
-        type="text"
-        name="searchQuery"
-        autocomplete="off"
-        placeholder="Search images..."
+      type="text"
+      name="searchQuery"
+      autocomplete="off"
+      placeholder="Search images..."
       />
       <button type="submit">Search</button>
     </form>
 
     <div class="gallery">
-      <!--Carduri cu imagini -->
+  <!--Carduri cu imagini -->
     </div>
 
-    <button type="button" class="load-more">Load more</button>
+    <div class="loading-indicator" style="display: none;">
+  <!-- Indicator de încărcare -->
+  Loading...
+    </div>
 
-    <script src="./js/index.js" type="module"></script>
+    <script type="module" src="./js/photoApi.js"></script>
+    <script src="./js/script.js" type="module"></script>
   </body>
 </html>
